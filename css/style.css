@@ -1,0 +1,44 @@
+/* Variables */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  font-family: "Helvetica", sans-serif; }
+
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF; }
+  main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+header, article, aside {
+  margin-bottom: 1.6949152542%; }
+
+header {
+  padding: 2em;
+  background-color: #FF4CA5; }
+
+article {
+  width: 66.1016949153%;
+  float: left;
+  margin-right: 1.6949152542%;
+  padding: 2em;
+  background-color: #ff007f; }
+
+aside {
+  width: 32.2033898305%;
+  float: right;
+  margin-right: 0;
+  padding: 2em;
+  background-color: #CC0066; }
+
+footer {
+  clear: both;
+  padding: 2em;
+  background-color: #7F2653; }
