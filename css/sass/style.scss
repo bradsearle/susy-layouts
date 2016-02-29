@@ -3,12 +3,9 @@
 
 
 /* Variables */
-$color1: #FFFFFF;
-$color2: #FF4CA5;
-$color3: #ff007f;
-$color4: #7F2653;
-$color5: #CC0066;
-$color6: #031f38;
+$bg-white: #FFFFFF;
+$bg-lightgrey: #efefef;
+
 
 $susy: (
     columns: 12,
@@ -26,7 +23,7 @@ $susy: (
 
 main {
     @include container;
-    background-color: $color1;
+    background-color: $bg-white;
 }
 
 header, article, aside {
@@ -35,23 +32,23 @@ header, article, aside {
 
 header {
     padding: 2em;
-    background-color: $color2;
+    background-color: $bg-lightgrey;
 }
 
 article {
     @include span(8);
     padding: 2em;
-    background-color: $color3;
+    background-color: $bg-lightgrey;
 }
 
 aside {
     @include span(4 last);
     padding: 2em;
-    background-color: $color5;
+    background-color: $bg-lightgrey;
 }
 
 footer {
     clear: both;
     padding: 2em;
-    background-color: $color4;
+    background-color: $bg-lightgrey;
 }

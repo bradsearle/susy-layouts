@@ -22,23 +22,23 @@ header, article, aside {
 
 header {
   padding: 2em;
-  background-color: #FF4CA5; }
+  background-color: #efefef; }
 
 article {
   width: 66.1016949153%;
   float: left;
   margin-right: 1.6949152542%;
   padding: 2em;
-  background-color: #ff007f; }
+  background-color: #efefef; }
 
 aside {
   width: 32.2033898305%;
   float: right;
   margin-right: 0;
   padding: 2em;
-  background-color: #CC0066; }
+  background-color: #efefef; }
 
 footer {
   clear: both;
   padding: 2em;
-  background-color: #7F2653; }
+  background-color: #efefef; }
