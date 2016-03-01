@@ -1,21 +1,27 @@
 /* Variables */
+/* @Extends */
+.red, header {
+  color: red; }
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-* {
-  font-family: "Helvetica", sans-serif; }
-
-main {
+.wrap {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #FFFFFF; }
-  main:after {
+  .wrap:after {
     content: " ";
     display: block;
     clear: both; }
+
+.test {
+  width: 49%;
+  float: left;
+  margin-right: 1.6949152542%; }
 
 header, article, aside {
   margin-bottom: 1.6949152542%; }
@@ -25,14 +31,14 @@ header {
   background-color: #efefef; }
 
 article {
-  width: 66.1016949153%;
+  width: 83.0508474576%;
   float: left;
   margin-right: 1.6949152542%;
   padding: 2em;
   background-color: #efefef; }
 
 aside {
-  width: 32.2033898305%;
+  width: 15.2542372881%;
   float: right;
   margin-right: 0;
   padding: 2em;

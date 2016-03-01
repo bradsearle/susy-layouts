@@ -7,24 +7,37 @@ $bg-white: #FFFFFF;
 $bg-lightgrey: #efefef;
 
 
+
+/* @Extends */
+.red{
+    color:red;
+}
+
+
 $susy: (
     columns: 12,
     container: 1200px,
     gutters: 1/4,
     global-box-sizing: border-box,
-    debug: (image: hide)
+
 );
+
+
 
 @include border-box-sizing;
 
-* {
-  font-family: "Helvetica", sans-serif;
-}
 
-main {
+.wrap{
     @include container;
     background-color: $bg-white;
+
 }
+
+.test{
+    @include span(49%);
+}
+
+
 
 header, article, aside {
   margin-bottom: gutter();
@@ -33,16 +46,17 @@ header, article, aside {
 header {
     padding: 2em;
     background-color: $bg-lightgrey;
+    @extend .red;
 }
 
 article {
-    @include span(8);
+    @include span(10);
     padding: 2em;
     background-color: $bg-lightgrey;
 }
 
 aside {
-    @include span(4 last);
+    @include span(2 last);
     padding: 2em;
     background-color: $bg-lightgrey;
 }
