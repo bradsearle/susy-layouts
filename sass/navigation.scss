@@ -1,0 +1,44 @@
+// _navigation.scss
+
+
+
+
+
+/* Variables */
+$bg-grey: #f1f1f1;
+
+
+
+
+ul,
+ol {
+   margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 22px;
+  text-decoration: none;
+}
+
+li  {
+    display: inline;
+    color: #000;
+
+}
+li a{
+    text-decoration: none;
+}
+
+
+@mixin border-radius($radius){
+    --webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+
+}
+
+.navwrap{
+    @include border-radius(3px);
+    padding: 2px;
+    margin-bottom: 10px;
+}
