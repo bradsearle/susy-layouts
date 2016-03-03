@@ -1,6 +1,10 @@
 @import "susy";
 @import "breakpoint";
 @import "navigation";
+@import "compass/css3";
+@import "compass/typography";
+@import "base";
+@import "compass/reset/utilities";
 
 
 
@@ -16,12 +20,10 @@ $bg-black: #000;
 }
 
 
-$high-tide: 500px;
-
 
 $susy: (
     columns: 12,
-    container: 1200px,
+    container: 900px,
     gutters: 1/4,
     global-box-sizing: border-box,
 
@@ -29,9 +31,8 @@ $susy: (
 
 
 
-
 // assume min-width (by default) if only a number
-$high-tide: 500px;
+$high-tide: 300px;
 // set min-width/max-width if both values are numbers
 $ex-presidents: 600px 800px;
 // if one value is a string, assume a feature/value pair
@@ -42,7 +43,17 @@ $surfboard-height: (min-height 1000px) (orientation portrait);
 
 
 
+
 @include border-box-sizing;
+
+
+a
+{
+        // link colors (normal, hover, active, visited, focus)
+        @include link-colors(#000, #ccc, grey, #000, blue);
+}
+
+
 
 
 .wrap{
@@ -86,4 +97,8 @@ footer {
     clear: both;
     padding: 2em;
     background-color: $bg-lightgrey;
+}
+
+.gradient{
+    @include background-image(linear-gradient(#ccc, #000));
 }

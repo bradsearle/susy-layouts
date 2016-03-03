@@ -2,7 +2,6 @@ require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
 require 'susy'
-
 require 'breakpoint'
 
 
@@ -13,9 +12,11 @@ require 'breakpoint'
 http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
-images_dir = "imgs"
-javascripts_dir = "scripts"
-fonts_dir = "fonts"
+images_dir = "img"
+javascripts_dir = "js"
+output_style = :expanded
+relative_assets = true
+line_comments = true
 
 output_style = :nested
 
