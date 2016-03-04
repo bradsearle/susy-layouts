@@ -1,5 +1,8 @@
 @import "susy";
 @import "breakpoint";
+@import "partials/footer";
+@import "partials/header";
+@import "one";
 @import "navigation";
 @import "compass/css3";
 @import "compass/typography";
@@ -12,93 +15,3 @@
 $bg-white: #FFFFFF;
 $bg-lightgrey: #efefef;
 $bg-black: #000;
-
-
-/* @Extends */
-.red{
-    color:red;
-}
-
-
-
-$susy: (
-    columns: 12,
-    container: 900px,
-    gutters: 1/4,
-    global-box-sizing: border-box,
-
-);
-
-
-
-// assume min-width (by default) if only a number
-$high-tide: 300px;
-// set min-width/max-width if both values are numbers
-$ex-presidents: 600px 800px;
-// if one value is a string, assume a feature/value pair
-$surfboard-width: max-width 1000px;
-// string tests together within parentheses, assume each item is a feature value pair
-$surfboard-height: (min-height 1000px) (orientation portrait);
-
-
-
-
-
-@include border-box-sizing;
-
-
-a
-{
-        // link colors (normal, hover, active, visited, focus)
-        @include link-colors(#000, #ccc, grey, #000, blue);
-}
-
-
-
-
-.wrap{
-    @include container;
-    background-color: $bg-white;
-
-}
-
-.test{
-    @include span(49%);
-}
-
-
-
-header, article, aside {
-  margin-bottom: gutter();
-}
-
-header {
-    padding: 2em;
-    background-color: $bg-lightgrey;
-
-     @include breakpoint($ex-presidents){
-         background-color: $bg-black;
-     }
-}
-
-article {
-    @include span(10);
-    padding: 2em;
-    background-color: $bg-lightgrey;
-}
-
-aside {
-    @include span(2 last);
-    padding: 2em;
-    background-color: $bg-lightgrey;
-}
-
-footer {
-    clear: both;
-    padding: 2em;
-    background-color: $bg-lightgrey;
-}
-
-.gradient{
-    @include background-image(linear-gradient(#ccc, #000));
-}

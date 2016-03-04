@@ -1,0 +1,76 @@
+// _one.scss
+
+
+
+
+
+
+/* Variables */
+$bg-white: #FFFFFF;
+$bg-lightgrey: #efefef;
+$bg-black: #000;
+
+
+/* @Extends */
+.red{
+    color:red;
+}
+
+
+
+$susy: (
+    columns: 12,
+    container: 900px,
+    gutters: .25,
+    global-box-sizing: border-box,
+
+
+);
+
+$container-width: 50%;
+
+// assume min-width (by default) if only a number
+$high-tide: 300px;
+// set min-width/max-width if both values are numbers
+$ex-presidents: 600px 800px;
+// if one value is a string, assume a feature/value pair
+$surfboard-width: max-width 1000px;
+// string tests together within parentheses, assume each item is a feature value pair
+$surfboard-height: (min-height 1000px) (orientation portrait);
+
+
+
+
+
+@include border-box-sizing;
+
+
+
+
+
+.wrap{
+    @include container;
+    background-color: $bg-white;
+
+}
+
+
+
+
+header, article, aside {
+  margin-bottom: gutter();
+}
+
+
+
+article {
+    @include span(10);
+    padding: 2em;
+    background-color: $bg-lightgrey;
+}
+
+aside {
+    @include span(2 last);
+    padding: 2em;
+    background-color: $bg-lightgrey;
+}
